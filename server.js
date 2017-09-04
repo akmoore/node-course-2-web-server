@@ -47,6 +47,10 @@ app.get('/about', (req, res) => {
     res.render('about.hbs', {title: 'About Page Here'});
 });
 
+app.get('/projects', (req, res) => {
+    res.render('projects', {title: 'Projects Page', welcomeMessage: 'View my Portfolio'});
+});
+
 app.get('/bad', (req, res) => {
     res.json({errorMessage: 'Can not handle reques'});
 });
